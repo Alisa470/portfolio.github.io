@@ -1,0 +1,112 @@
+html {
+    scroll-behavior: smooth; /* Jevn scrolling-effekt. */
+}
+
+body {
+    background-color: black; /* Svart bakgrunn. */
+    color: rgb(231, 231, 231); /* Lys grå tekst. */
+    overflow-x: hidden; /* Skjuler horisontal scrollbar. */
+}
+
+.navig1, .navig2 {
+    display: flex; /* Aktiverer flexbox layout. */
+    flex-direction: column; /* Innhold vertikalt. */
+    justify-content: center; /* Justering innad i container. */
+    align-items: center; /* Horisontal sentrering av innhold. */
+}
+
+.column {
+    column-count: 2; /* Deler innholdet i to kolonner. */
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0); /* Gjør bakgrunnen gjennomsiktig. */
+    border-width: 40px; /* Setter tykkelsen på rammen rundt knappen. */
+    width: 570px; /* Fast bredde for knappen. */
+    height: 270px; /* Fast høyde for knappen. */
+    border-radius: 900px; /* Gjør kantene veldig runde for å skape en sirkel- eller pilleform. */
+    border-color: rgb(136, 41, 225); /* Lilla farge på knappens ramme. */
+    margin: 50px; /* Legger til plass rundt knappen. */
+}
+
+.knapp {
+    text-decoration: none; /* Fjerner tekstunderstreking. */
+    font-size: 65px; /* Stor skriftstørrelse. */
+    text-align: center; /* Sentrerer tekst. */
+    color: rgb(231, 231, 231); /* Lys grå tekstfarge. */
+    width: 570px; /* Fast bredde. */
+    height: 270px; /* Fast høyde. */
+    display: flex; /* Bruker Flexbox for layout. */
+    flex-direction: column; /* Innhold vertikalt organisert. */
+    justify-content: center; /* Vertikal sentrering av innhold. */
+    position: relative; /* Gjør posisjon justerbar. */
+    left: -45px; /* Flytter til venstre fra opprinnelig posisjon. */
+    top: -44px; /* Flytter opp fra opprinnelig posisjon. */
+    font-family: "Raleway", sans-serif; /* Skrifttype 'Raleway'. */
+    font-optical-sizing: auto; /* Automatisk skriftjustering. */
+    font-weight: 400; /* Normal skrifttykkelse. */
+    font-style: normal; /* Standard tekststil. */
+}
+
+button:hover {
+    background-color: rgb(136, 41, 225); /* Endrer bakgrunnsfarge ved hover for knapp. */
+}
+
+.knapp:hover {
+    animation-name: tekst; /* Navnet på animasjonen for hover-effekt. */
+    animation-duration: 0.4s; /* Varighet av animasjonen. */
+    animation-fill-mode: forwards; /* Beholder animasjonens sluttstil. */
+}
+
+@keyframes tekst {
+    100% { transform: scale(1.15, 1.15); } /* Forstørrer teksten til 115%. */
+}
+
+p {
+    font-family: "Montserrat", sans-serif; /* Skrifttype Montserrat, fallback sans-serif. */
+    font-optical-sizing: auto; /* Automatisk optisk størrelsesjustering. */
+    font-weight: 400; /* Normal skrifttykkelse. */
+    font-style: normal; /* Normal skriftstil. */
+    font-size: 50px; /* Skriftstørrelse 50px. */
+    margin-left: 50px; /* Venstre marg på 50px. */
+}  
+
+footer {
+    background-color: rgb(56, 56, 56); /* Mørk grå bakgrunnsfarge. */
+    margin: 30px -10px -10px -10px; /* Marg rundt, trekker inn fra kantene. */
+    padding: 2px 50px 2px 50px; /* Padding for innholdet. */
+    display: flex; /* Bruker flexbox for layout. */
+    align-items: center; /* Sentrerer innholdet vertikalt. */
+    justify-content: center; /* Sentrerer innholdet horisontalt. */
+}
+
+.link {
+    text-decoration: none; /* Ingen understrekning på lenker. */
+    color: white; /* Tekstfargen er hvit. */
+    margin: 40px 20px 40px 50px; /* Marg rundt lenken. */
+    width: 50%; /* Lenken tar 50% av bredden. */
+}
+
+.link:hover {
+    color: rgb(136, 41, 225); /* Tekstfargen endres ved hover. */
+    border-radius: 50px; /* Avrundede hjørner ved hover. */
+    transition: 1s; /* Overgangseffekt varer 1 sekund. */
+    padding: 10px; /* Padding rundt tekst økes ved hover. */
+}
+
+.link-img {
+    margin: 20px; /* Marg rundt bilde-lenken. */
+    width: 150px; /* Fast bredde for bilde-lenken. */
+    bottom: 250px; /* Posisjonerer bilde-lenken 250px opp. */
+}
+
+.link-img:hover {
+    box-shadow: 0 0 20px rgb(136, 41, 225); /* Skyggeeffekt ved hover. */
+    border-radius: 500px; /* Gjør bilde-lenken sirkelrund ved hover. */
+    transition: 0.5s; /* Raskere overgangseffekt ved hover. */
+}
+
+.kontakt {
+    position: relative; /* Gjør at elementet kan justeres relativt. */
+    margin-right: 1500px; /* Flytter elementet 1500px til høyre. */
+}

@@ -1,0 +1,167 @@
+html {
+    scroll-behavior: smooth; /* Jevn scrolling-effekt. */
+}
+
+body {
+    background-color: black; /* Svart bakgrunn. */
+    color: rgb(231, 231, 231); /* Lys grå tekst. */
+    overflow-x: hidden; /* Skjuler horisontal scrollbar. */
+}
+
+nav {
+    background-color: rgb(56, 56, 56); /* Mørkegrå bakgrunn. */
+    margin: -10px -10px 0 -10px; /* Justerer margin. */
+    display: flex; /* Aktiverer flexbox. */
+    align-items: center; /* Vertikal sentrering. */
+    justify-content: flex-start; /* Starter justering til venstre. */
+}
+
+.icon {
+    margin-left: 80px; /* Venstre marg for ikonet. */
+    margin-right: 1350px; /* Stor høyre marg. */
+}
+
+ul {
+    list-style-type: none; /* Fjerner standard listestil/prikker. */
+    margin: 0; /* Nullstiller marg. */
+    padding: 0; /* Nullstiller padding. */
+    font-family: "Montserrat", sans-serif; /* Skrifttype Montserrat, fallback sans-serif. */
+    font-optical-sizing: auto; /* Automatisk optisk størrelsesjustering. */
+    font-weight: 400; /* Normal skrifttykkelse. */
+    font-style: normal; /* Normal skriftstil. */
+    font-size: 40px; /* Skriftstørrelse 40px. */
+    display: flex; /* Bruker flexbox for å organisere listeelementene horisontalt. */
+}
+  
+li a {
+    display: block; /* Gjør lenken til et blokkelement for å ta opp full bredde. */
+    color: white; /* Setter teksten til hvit. */
+    text-align: center; /* Sentrerer teksten. */
+    padding: 14px 16px; /* Setter innvendig avstand rundt teksten. */
+    text-decoration: none; /* Fjerner understrekning fra lenker. */
+    margin: 30px; /* Setter marg rundt hver lenke. */
+}
+  
+li a:hover {
+    text-decoration: underline; /* Understrek lenker ved hover. */
+}
+
+.active {
+    text-decoration: underline; /* Understrek for aktiv lenke. */
+    text-shadow: 0 0 20px rgb(136, 41, 225); /* Skyggeeffekt for aktiv lenke. */
+    border-radius: 50px; /* Avrundede hjørner for den aktive lenken. */
+}
+
+.container {
+    margin: 150px 400px; /* Justerer plasseringen av containeren med utvendig marg. */
+    font-family: "Raleway", sans-serif; /* Skrifttype 'Raleway'. */
+    font-optical-sizing: auto; /* Automatisk skriftjustering. */
+    font-weight: 400; /* Normal skrifttykkelse. */
+    font-style: normal; /* Standard tekststil. */
+    font-size: 40px; /* Skriftstørrelse 40px. */
+}
+
+footer {
+    background-color: rgb(56, 56, 56); /* Mørk grå bakgrunnsfarge. */
+    margin: 30px -10px -10px -10px; /* Marg rundt, trekker inn fra kantene. */
+    padding: 2px 50px 2px 50px; /* Padding for innholdet. */
+    display: flex; /* Bruker flexbox for layout. */
+    align-items: center; /* Sentrerer innholdet vertikalt. */
+    justify-content: center; /* Sentrerer innholdet horisontalt. */
+}
+
+.link {
+    text-decoration: none; /* Ingen understrekning på lenker. */
+    color: white; /* Tekstfargen er hvit. */
+    margin: 40px 20px 40px 50px; /* Marg rundt lenken. */
+    width: 50%; /* Lenken tar 50% av bredden. */
+}
+
+.link:hover {
+    color: rgb(136, 41, 225); /* Tekstfargen endres ved hover. */
+    border-radius: 50px; /* Avrundede hjørner ved hover. */
+    transition: 1s; /* Overgangseffekt varer 1 sekund. */
+    padding: 10px; /* Padding rundt tekst økes ved hover. */
+}
+
+.link-img {
+    margin: 20px; /* Marg rundt bilde-lenken. */
+    width: 150px; /* Fast bredde for bilde-lenken. */
+    bottom: 250px; /* Posisjonerer bilde-lenken 250px opp. */
+}
+
+.link-img:hover {
+    box-shadow: 0 0 20px rgb(136, 41, 225); /* Skyggeeffekt ved hover. */
+    border-radius: 500px; /* Gjør bilde-lenken sirkelrund ved hover. */
+    transition: 0.5s; /* Raskere overgangseffekt ved hover. */
+}
+
+.kontakt {
+    position: relative; /* Gjør at elementet kan justeres relativt. */
+    margin-right: 1500px; /* Flytter elementet 1500px til høyre. */
+    font-family: "Montserrat", sans-serif; /* Skrifttype Montserrat, fallback sans-serif. */
+    font-optical-sizing: auto; /* Automatisk optisk størrelsesjustering. */
+    font-weight: 400; /* Normal skrifttykkelse. */
+    font-style: normal; /* Normal skriftstil. */
+    font-size: 50px; /* Skriftstørrelse 50px. */
+}
+
+.container p a {
+    text-shadow: 0 0 10px rgb(136, 41, 225); /* Lilla tekstskygge. */
+    text-decoration: none; /* Fjerner understrekning. */
+    color: rgb(214, 132, 219); /* Lys lilla tekstfarge. */
+}
+
+.dropdown {
+    position: relative; /* Posisjoneres relativt for absolutt plasserte barn. */
+    display: inline-block; /* Gjør elementet til inline-blokk for layoutformål. */
+}
+
+.dropdown-content {
+    display: none; /* Skjult som standard. */
+    position: absolute; /* Posisjoneres absolutt i forhold til forelder. */
+    background-color: rgba(56, 56, 56, 0.399); /* Halvgjennomsiktig mørk bakgrunn. */
+    width: 350px; /* Fast bredde. */
+    z-index: 1; /* Sikrer at dropdown-innholdet vises over andre elementer. */
+    border-radius: 50px; /* Avrundede hjørner. */
+}
+
+.dropdown-content a {
+    color: white; /* Hvit tekstfarge. */
+    padding: 35px 16px; /* Padding rundt lenkene. */
+    text-decoration: none; /* Fjerner understrekning. */
+    display: block; /* Viser lenker som blokkelementer for å ta opp hele bredden. */
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(136, 41, 225, 0.399); /* Endrer bakgrunn ved hover til halvgjennomsiktig lilla. */
+    border-radius: 50px; /* Bevarer avrundede hjørner ved hover. */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Viser dropdown-innholdet ved hover over dropdown. */
+}
+
+.knapp-nav {
+    background-color: rgba(56, 56, 56, 0.399); /* Halvgjennomsiktig mørkegrå bakgrunnsfarge. */
+    width: 400px; /* Fast bredde på 400px. */
+    height: 50px; /* Fast høyde på 50px. */
+    text-decoration: none; /* Fjerner understrekning fra tekst. */
+    color: white; /* Hvit tekstfarge. */
+    font-size: 40px; /* Stor tekststørrelse. */
+    padding: 30px 50px; /* Polstring rundt teksten for større klikkområde. */
+    display: block; /* Gjør at knappen opptar hele bredden den kan. */
+}
+
+.column {
+    column-count: 2; /* Deler innholdet i 2 kolonner. */
+    width: 60%; /* Bredde som en prosentandel av foreldreelementet. */
+    background-color: rgb(56, 56, 56); /* Mørkegrå bakgrunnsfarge. */
+    margin-bottom: 800px; /* Stor nedre marg for å skape avstand til neste seksjon. */
+    align-items: center; /* Sentrerer innholdet vertikalt i kolonnene. */
+}
+
+.knapp-nav:hover {
+    background-color: rgba(136, 41, 225, 0.399); /* Endrer bakgrunnsfarge til halvgjennomsiktig lilla ved hover. */
+    color: black; /* Tekstfargen endres til svart ved hover. */
+}
