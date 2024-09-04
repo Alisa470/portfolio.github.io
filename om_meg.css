@@ -10,15 +10,15 @@ body {
 
 nav {
     background-color: rgb(56, 56, 56); /* Mørkegrå bakgrunn. */
-    margin: -10px -10px 0 -10px; /* Justerer margin. */
+    margin: -5px -5px 0 -5px; /* Justerer margin. */ /*-10px -10px 0 -10px*/
     display: flex; /* Aktiverer flexbox. */
     align-items: center; /* Vertikal sentrering. */
     justify-content: flex-start; /* Starter justering til venstre. */
 }
 
 .icon {
-    margin-left: 80px; /* Venstre marg for ikonet. */
-    margin-right: 1350px; /* Stor høyre marg. */
+    margin-left: 40px; /* Venstre marg for ikonet. */ /*80px*/
+    margin-right: 675px; /* Stor høyre marg. */ /*1350px*/
 }
 
 ul {
@@ -29,7 +29,7 @@ ul {
     font-optical-sizing: auto; /* Automatisk optisk størrelsesjustering. */
     font-weight: 400; /* Normal skrifttykkelse. */
     font-style: normal; /* Normal skriftstil. */
-    font-size: 40px; /* Skriftstørrelse 40px. */
+    font-size: 20px; /* Skriftstørrelse 40px. */ /*40px*/
     display: flex; /* Bruker flexbox for å organisere listeelementene horisontalt. */
 }
   
@@ -37,9 +37,9 @@ li a {
     display: block; /* Gjør lenken til et blokkelement for å ta opp full bredde. */
     color: white; /* Setter teksten til hvit. */
     text-align: center; /* Sentrerer teksten. */
-    padding: 14px 16px; /* Setter innvendig avstand rundt teksten. */
+    padding: 7px 8px; /* Setter innvendig avstand rundt teksten. */ /*14px 16px*/
     text-decoration: none; /* Fjerner understrekning fra lenker. */
-    margin: 30px; /* Setter marg rundt hver lenke. */
+    margin: 15px; /* Setter marg rundt hver lenke. */ /*30px*/
 }
   
 li a:hover {
@@ -48,32 +48,32 @@ li a:hover {
 
 .active {
     text-decoration: underline; /* Understrek for aktiv lenke. */
-    text-shadow: 0 0 20px rgb(136, 41, 225); /* Skyggeeffekt for aktiv lenke. */
-    border-radius: 50px; /* Avrundede hjørner for den aktive lenken. */
+    text-shadow: 0 0 10px rgb(136, 41, 225); /* Skyggeeffekt for aktiv lenke. */ /*0 0 20px*/
+    border-radius: 25px; /* Avrundede hjørner for den aktive lenken. */ /*50px*/
 }
   
 .me {
-    height: 600px; /* Høyde på bilde. */
-    border-radius: 2500px; /* Svært avrundede hjørner for å skape sirkelform. */
-    border: 5px solid rgb(136, 41, 225); /* Lilla kantlinje rundt bildet. */
+    height: 300px; /* Høyde på bilde. */ /*600px*/
+    border-radius: 1250px; /* Svært avrundede hjørner for å skape sirkelform. */ /*2500px*/
+    border: 2.5px solid rgb(136, 41, 225); /* Lilla kantlinje rundt bildet. */ /*5px*/
     float: left; /* Flyter til venstre, lar tekst wrappe rundt. */
-    margin: 40px 100px 100px 0; /* Justerer plasseringen med margin. */
+    margin: 20px 50px 50px 0; /* Justerer plasseringen med margin. */ /*40px 100px 100px 0*/
     shape-outside: circle(50%); /* Definerer en sirkelform utenfor bildet for tekstflyt. */
 }
 
 .container {
-    margin: 150px 400px; /* Justerer plasseringen av containeren med utvendig marg. */
+    margin: 75px 200px; /* Justerer plasseringen av containeren med utvendig marg. */ /*150px 400px*/
     font-family: "Raleway", sans-serif; /* Skrifttype 'Raleway'. */
     font-optical-sizing: auto; /* Automatisk skriftjustering. */
     font-weight: 400; /* Normal skrifttykkelse. */
     font-style: normal; /* Standard tekststil. */
-    font-size: 40px; /* Skriftstørrelse 40px. */
+    font-size: 20px; /* Skriftstørrelse 40px. */ /*40px*/
 }
 
 footer {
     background-color: rgb(56, 56, 56); /* Mørk grå bakgrunnsfarge. */
-    margin: 30px -10px -10px -10px; /* Marg rundt, trekker inn fra kantene. */
-    padding: 2px 50px 2px 50px; /* Padding for innholdet. */
+    margin: 15px -5px -5px -5px; /* Marg rundt, trekker inn fra kantene. */ /*30px -10px -10px -10px*/
+    padding: 1px 25px 1px 25px; /* Padding for innholdet. */ /*2px 50px 2px 50px*/
     display: flex; /* Bruker flexbox for layout. */
     align-items: center; /* Sentrerer innholdet vertikalt. */
     justify-content: center; /* Sentrerer innholdet horisontalt. */
@@ -82,41 +82,41 @@ footer {
 .link {
     text-decoration: none; /* Ingen understrekning på lenker. */
     color: white; /* Tekstfargen er hvit. */
-    margin: 40px 20px 40px 50px; /* Marg rundt lenken. */
+    margin: 20px 10px 20px 25px; /* Marg rundt lenken. */ /*40px 20px 40px 50px*/
     width: 50%; /* Lenken tar 50% av bredden. */
 }
 
 .link:hover {
     color: rgb(136, 41, 225); /* Tekstfargen endres ved hover. */
-    border-radius: 50px; /* Avrundede hjørner ved hover. */
+    border-radius: 25px; /* Avrundede hjørner ved hover. */ /*50px*/
     transition: 1s; /* Overgangseffekt varer 1 sekund. */
-    padding: 10px; /* Padding rundt tekst økes ved hover. */
+    padding: 5px; /* Padding rundt tekst økes ved hover. */ /*10px*/
 }
 
 .link-img {
-    margin: 20px; /* Marg rundt bilde-lenken. */
-    width: 150px; /* Fast bredde for bilde-lenken. */
-    bottom: 250px; /* Posisjonerer bilde-lenken 250px opp. */
+    margin: 10px; /* Marg rundt bilde-lenken. */ /*20px*/
+    width: 75px; /* Fast bredde for bilde-lenken. */ /*150px*/
+    bottom: 125px; /* Posisjonerer bilde-lenken 250px opp. */ /*250px*/
 }
 
 .link-img:hover {
-    box-shadow: 0 0 20px rgb(136, 41, 225); /* Skyggeeffekt ved hover. */
-    border-radius: 500px; /* Gjør bilde-lenken sirkelrund ved hover. */
+    box-shadow: 0 0 10px rgb(136, 41, 225); /* Skyggeeffekt ved hover. */ /*0 0 20px*/
+    border-radius: 250px; /* Gjør bilde-lenken sirkelrund ved hover. */ /*500px*/
     transition: 0.5s; /* Raskere overgangseffekt ved hover. */
 }
 
 .kontakt {
     position: relative; /* Gjør at elementet kan justeres relativt. */
-    margin-right: 1500px; /* Flytter elementet 1500px til høyre. */
+    margin-right: 750px; /* Flytter elementet 1500px til høyre. */ /*1500px*/
     font-family: "Montserrat", sans-serif; /* Skrifttype Montserrat, fallback sans-serif. */
     font-optical-sizing: auto; /* Automatisk optisk størrelsesjustering. */
     font-weight: 400; /* Normal skrifttykkelse. */
     font-style: normal; /* Normal skriftstil. */
-    font-size: 50px; /* Skriftstørrelse 50px. */
+    font-size: 25px; /* Skriftstørrelse 50px. */ /*50px*/
 }
 
 .container p a {
-    text-shadow: 0 0 10px rgb(136, 41, 225); /* Lilla tekstskygge. */
+    text-shadow: 0 0 5px rgb(136, 41, 225); /* Lilla tekstskygge. */ /*0 0 10px*/
     text-decoration: none; /* Fjerner understrekning. */
     color: rgb(214, 132, 219); /* Lys lilla tekstfarge. */
 }
@@ -130,21 +130,21 @@ footer {
     display: none; /* Skjult som standard. */
     position: absolute; /* Posisjoneres absolutt i forhold til forelder. */
     background-color: rgba(56, 56, 56, 0.399); /* Halvgjennomsiktig mørk bakgrunn. */
-    width: 350px; /* Fast bredde. */
+    width: 175px; /* Fast bredde. */ /*350px*/
     z-index: 1; /* Sikrer at dropdown-innholdet vises over andre elementer. */
-    border-radius: 50px; /* Avrundede hjørner. */
+    border-radius: 25px; /* Avrundede hjørner. */ /*50px*/
 }
 
 .dropdown-content a {
     color: white; /* Hvit tekstfarge. */
-    padding: 35px 16px; /* Padding rundt lenkene. */
+    padding: 17.5px 8px; /* Padding rundt lenkene. */ /*35px 16px*/
     text-decoration: none; /* Fjerner understrekning. */
     display: block; /* Viser lenker som blokkelementer for å ta opp hele bredden. */
 }
 
 .dropdown-content a:hover {
     background-color: rgba(136, 41, 225, 0.399); /* Endrer bakgrunn ved hover til halvgjennomsiktig lilla. */
-    border-radius: 50px; /* Bevarer avrundede hjørner ved hover. */
+    border-radius: 25px; /* Bevarer avrundede hjørner ved hover. */ /*50px*/
 }
 
 .dropdown:hover .dropdown-content {
