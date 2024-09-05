@@ -19,6 +19,8 @@ nav {
 .icon {
     margin-left: 40px; /* Venstre marg for ikonet. */ /*80px*/
     margin-right: 675px; /* Stor høyre marg. */ /*1350px*/
+    width: 81px;
+    height: 81px;
 }
 
 ul {
